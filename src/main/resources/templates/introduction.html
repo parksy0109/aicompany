@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/introduction.css}">
+    <title>소개</title>
+</head>
+<body>
+<div class="company">
+    <img th:class="image" th:src="${company.image}" alt="첨부이미지"/>
+    <br>
+    <h1 style="display: inline" th:text="${company.name}"></h1>
+    <h2 style="display: inline" th:text="${company.description}"></h2>
+    <br>
+    <br>
+    <tbody>
+    <tr th:each="introduction, i: ${company.introduction}">
+        <td>
+            <a th:class="introduction" th:text="|• ${introduction}|"></a>
+        </td>
+        <br>
+    </tr>
+    </tbody>
+    <h4>참고자료</h4>
+    <tbody>
+    <tr th:each="reference, i: ${company.reference}">
+        <td>
+            <a th:class="reference" th:href="${reference}" th:text="|• ${reference}|"></a>
+        </td>
+        <br>
+    </tr>
+    </tbody>
+</div>
+</body>
+</html>

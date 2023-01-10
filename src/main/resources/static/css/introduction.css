@@ -1,0 +1,51 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #202124;
+    font-family: noto sans-serif;
+}
+
+h1 {
+    color: #BEC1C5;
+}
+
+h2 {
+    color: #9BA0A5;
+}
+
+h4 {
+    color: #BEC1C5;
+}
+
+.introduction {
+    color: #BEC1C5;
+}
+
+.reference {
+    color: #94B3F3;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.company {
+    display: inline-block;
+}
+
+.image {
+    margin: 0 auto;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    height: 70px;
+}
