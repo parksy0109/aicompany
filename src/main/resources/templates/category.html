@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/category.css}">
+    <title>업체별 분야</title>
+</head>
+<body>
+<div class="chart">
+    <div>
+        <canvas id="canvas" height="600" width="800"></canvas>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+<script>
+    var chartLabels
+    var chartData
+    var coloR = []
+
+    function dynamicColors() {
+        var r = Math.floor(Math.random() * 255);
+        var g = Math.floor(Math.random() * 255);
+        var b = Math.floor(Math.random() * 255);
+        return "rgb(" + r + "," + g + "," + b + ")";
+    }
+
+    async function request() {
+        const response = await fetch('http://localhost/companies/categories/count',
+            {
+                method: 'GET',
+            });
+        const data = await response.json();
+        chartLabels = Object.keys(data)
+        chartData = Object.values(data)
+
+        for(var i in chartData) {
+            coloR.push(dynamicColors())
+        }
+
+        drawChart()
+    }
+    request();
+
+    function drawChart() {
+        var ctx = document.getElementById("canvas");
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: chartLabels,
+                datasets: [{
+                    label: '업체별 분야',
+                    data: chartData,
+                    borderWidth: 1,
+                    backgroundColor: coloR
+                }]
+            },
+            options: {
+                //cutoutPercentage: 40,
+                responsive: false,
+
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/imageslider.css}">
+    <title>Title</title>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-slider' ).mount();
+        } );
+    </script>
+</head>
+<body>
+<div id="image-slider" class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <img src="../static/images/image01.jpeg">
+            </li>
+            <li class="splide__slide">
+                <img src="../static/images/image02.jpeg">
+            </li>
+            <li class="splide__slide">
+                <img src="../static/images/image03.jpeg">
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

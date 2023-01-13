@@ -49,3 +49,76 @@ a {
     justify-content: center;
     height: 70px;
 }
+
+.development_status {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.content {
+    margin: 0 20px;
+    color: #9BA0A5;
+}
+
+.comment {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    color: #58D6CB;
+    width: 100%;
+    text-align: center;
+}
+
+.tob {
+    font-size: 18px;
+    font-weight: bold;
+    color: #9BA0A5;
+    margin: 0 5px;
+    display: inline;
+}
+
+.tob_main {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.badge-warning {
+    color: #202124;
+    background-color: #ffc107;
+}
+
+.badge-category {
+    color: #202124;
+    background-color: #6D8DED;
+}
+.badge-type-of-business {
+    color: #202124;
+    background-color: #A1802A;
+}
+
+.badge-success {
+    color: #202124;
+    background-color: #01C009;
+}
+
+.development_stage {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

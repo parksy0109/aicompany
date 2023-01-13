@@ -8,7 +8,20 @@
 <body>
 <div class="company">
     <img th:class="image" th:src="${company.image}" alt="첨부이미지"/>
-    <br>
+    <div class="tob_main">
+            <span class="badge badge-category tob" th:each="item : ${company.category}">
+        <a th:text="${item}"></a>
+    </span>
+    </div>
+    <div class="development_stage">
+        <span th:if="${company.stage.name() == 'DEVELOPMENT'}" class="badge badge-warning">개발중</span>
+        <span th:if="${company.stage.name() == 'PRODUCTION'}" class="badge badge-success">운영중</span>
+    </div>
+    <div class="tob_main" th:if="${not #lists.isEmpty(company.typeOfBusiness)}">
+        <span class="badge badge-type-of-business tob" th:each="item : ${company.typeOfBusiness}">
+        <a th:text="${item}"></a>
+    </span>
+    </div>
     <h1 style="display: inline" th:text="${company.name}"></h1>
     <h2 style="display: inline" th:text="${company.description}"></h2>
     <br>
@@ -30,6 +43,36 @@
         <br>
     </tr>
     </tbody>
+    <br>
+    <h4>개발 현황</h4>
+    <div class="development_status">
+        <div class="content">
+            웹 개발
+        </div>
+        <div class="content">
+            <a th:if="${company.hasWeb}">✅</a>
+            <a th:if="${!company.hasWeb}">❌</a>
+        </div>
+        <div class="content">
+            Android 개발
+        </div>
+        <div class="content">
+            <a th:if="${company.hasAndroid}">✅</a>
+            <a th:if="${!company.hasAndroid}">❌</a>
+        </div>
+        <div class="content">
+            IOS 개발
+        </div>
+        <div class="content">
+            <a th:if="${company.hasIos}">✅</a>
+            <a th:if="${!company.hasIos}">❌</a>
+        </div>
+    </div>
+    <br>
+    <div th:if="${company.coreTech != ''}">
+        <h4>핵심 기술</h4>
+        <a class="comment" th:text="${company.coreTech}"></a>
+    </div>
 </div>
 </body>
 </html>

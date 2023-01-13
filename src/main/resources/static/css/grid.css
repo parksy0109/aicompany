@@ -1,9 +1,8 @@
 .container {
     align-items: center;
-    margin: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr 3fr 3fr 3fr;
 }
 
 .main-title {
@@ -16,6 +15,7 @@
 }
 
 body {
+    height: 100%;
     background-color: #202124;
     font-family: noto sans-serif;
 }
@@ -27,14 +27,22 @@ body {
 }
 
 .content:hover {
+    cursor: pointer;
     background-color: #4B4E56;
 }
 
 .title {
+    font-weight: bold;
+    font-size: 20px;
     color: #BEC1C5;
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.title:hover {
+    cursor: pointer;
+    color: #94B3F3;
 }
 
 .company-img {

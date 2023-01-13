@@ -1,6 +1,7 @@
 package github.parksy0109.aicompany
 
 import github.parksy0109.aicompany.model.companies
+import github.parksy0109.aicompany.model.getCategoryCountData
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
@@ -16,6 +17,18 @@ class Controller {
         }
 
         return "introduction"
+    }
+
+    @GetMapping("/category")
+    fun category(model: Model): String {
+        model.addAttribute("category", getCategoryCountData())
+        return "category"
+    }
+
+    @GetMapping("/imageslider")
+    fun imageSlider(model: Model): String {
+        model.addAttribute("category", getCategoryCountData())
+        return "imageslider"
     }
 
 }
