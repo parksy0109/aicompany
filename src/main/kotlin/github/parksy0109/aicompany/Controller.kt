@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.PathVariable
 @Controller
 class Controller {
 
+    @GetMapping("/")
+    fun index(model: Model): String {
+        model.addAttribute("company_count", companies.size)
+        return "index"
+    }
+
     @GetMapping("/introduction/{name}")
     fun introduction(model: Model, @PathVariable name: String): String {
         companies[name]?.let {

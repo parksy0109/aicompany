@@ -61,7 +61,7 @@ val companies = mapOf(
                 hasWeb = false,
                 hasAndroid = false,
                 hasIos = false,
-                "\"인공지능을 활욜하여 광고의 효율을 극대화하는 기술\"",
+                "인공지능을 활욜하여 광고의 효율을 극대화하는 기술",
                 listOf(B2B)
             ),
     "NationA" to
@@ -83,7 +83,7 @@ val companies = mapOf(
                 hasWeb = false,
                 hasAndroid = false,
                 hasIos = false,
-                "\"AI 기반 3D 모션 데이터 생성 기술\"",
+                "AI 기반 3D 모션 데이터 생성 기술",
                 listOf(B2B, B2C)
             ),
     "스프링클라우드" to
@@ -104,7 +104,7 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = true,
                 hasIos = false,
-                "\"라이다 인지, 카메라 인지, 바운딩박스로 인지 대상 확인\"",
+                "라이다 인지, 카메라 인지, 바운딩박스로 인지 대상 확인",
                 listOf(B2B)
             ),
     "꿈많은청년들" to
@@ -232,8 +232,8 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = false,
                 hasIos = false,
-                "",
-                listOf()
+                "공간 - 브랜드 AI 매칭",
+                listOf(B2B, B2C)
             ),
     "딥스튜디오" to
             Company(
@@ -253,8 +253,8 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = false,
                 hasIos = false,
-                "",
-                listOf()
+                "디지털 아이돌 사업, 컴퓨터 비전",
+                listOf(B2B, B2C)
             ),
     "버즈앤비" to
             Company(
@@ -273,8 +273,8 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = false,
                 hasIos = false,
-                "",
-                listOf()
+                "AI 및 빅데이터 기술을 통해 브랜드에 최적화된 유튜버를 찾아주는 서비스",
+                listOf(B2B, B2C)
             ),
     "에이아이네이션" to
             Company(
@@ -292,8 +292,8 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = false,
                 hasIos = false,
-                "",
-                listOf()
+                "머신 비전, 예측 분석, 데이터 생성 등 - 인공지능 알고리즘 뱅크 구축",
+                listOf(B2B)
             ),
     "에프앤에스홀딩스" to
             Company(
@@ -318,7 +318,7 @@ val companies = mapOf(
     "오아시스비즈니스" to
             Company(
                 "오아시스비즈니스",
-                DEVELOPMENT,
+                PRODUCTION,
                 listOf("PropTech", "Fintech"),
                 "AI 상권분석 기반 프롭핀테크 스타트업",
                 listOf(
@@ -333,13 +333,13 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = true,
                 hasIos = true,
-                "",
-                listOf()
+                "상업용 부동산 Scoring 시스템",
+                listOf(B2B, B2C)
             ),
     "온굿플레이스" to
             Company(
                 "온굿플레이스",
-                DEVELOPMENT,
+                PRODUCTION,
                 listOf("Chatbot", "Big data"),
                 "인공지능기반 소셜 빅데이터 분석 (서비스명: 모객의달인)",
                 listOf(
@@ -355,13 +355,13 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = false,
                 hasIos = true,
-                "",
-                listOf()
+                "소셜 빅 데이터 분석 솔루션",
+                listOf(B2B)
             ),
     "와트" to
             Company(
                 "와트",
-                DEVELOPMENT,
+                PRODUCTION,
                 listOf("AR", "VR"),
                 "AR(증강현실)을 이용하여 스마트글라스 기반으로 산업용 솔루션을 제공",
                 listOf(
@@ -376,8 +376,8 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = true,
                 hasIos = false,
-                "",
-                listOf()
+                "음성 인식 시스템, 스마트 팩토리",
+                listOf(B2B)
             ),
     "이모티브" to
             Company(
@@ -419,13 +419,13 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = false,
                 hasIos = false,
-                "",
-                listOf()
+                "RPA, 반복된 사무 업무의 자동화",
+                listOf(B2B, B2G)
             ),
     "케이엠에듀" to
             Company(
                 "케이엠에듀",
-                DEVELOPMENT,
+                PRODUCTION,
                 listOf("Edu Tech"),
                 "소원영어 컨텐츠 제작 및 서비스 / 영어교육 인공지능 SSAI 앱 개발",
                 listOf(
@@ -439,13 +439,13 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = false,
                 hasIos = false,
-                "",
-                listOf()
+                "위치 기반 기술을 통한 강의 자동 선택, 음성 인식을 통한 발음 확인",
+                listOf(B2C)
             ),
     "큐브로이드" to
             Company(
                 "큐브로이드",
-                DEVELOPMENT,
+                PRODUCTION,
                 listOf("Edu Tech"),
                 "어린이용 스마트 AI 로봇과 코딩 블록을 설계하고 제조하는 AI 및 로보틱스 기업",
                 listOf(
@@ -460,7 +460,107 @@ val companies = mapOf(
                 hasWeb = true,
                 hasAndroid = true,
                 hasIos = true,
-                "",
-                listOf()
+                "AI 로봇",
+                listOf(B2C)
+            ),
+    "트이다" to
+            Company(
+                "트이다",
+                PRODUCTION,
+                listOf("Edu Tech"),
+                "한국어 교육 앱 서비스 (베트남)",
+                listOf(
+                    "AI 발음 분석 - 발음에 대한 즉각적인 피드백 제공",
+                    "이중 언어 튜터의 강의",
+                ),
+                listOf(
+                    "https://www.teuida.net/",
+                ),
+                "../images/teuida.png",
+                hasWeb = true,
+                hasAndroid = true,
+                hasIos = true,
+                "AI를 통한 발음 분석",
+                listOf(B2C)
+            ),
+    "파이" to
+            Company(
+                "파이",
+                PRODUCTION,
+                listOf("AI", "Chatbot", "Big data", "Prop Tech"),
+                "공간 파트너 매칭 공생 플랫폼 \"공생공사\"",
+                listOf(
+                    "공생공사 - 매출연동형 임대료 계약기반 공간 비즈니스 파트너 매칭 서비스",
+                ),
+                listOf(
+                    "http://www.gongseang.com/",
+                ),
+                "../images/pie.png",
+                hasWeb = true,
+                hasAndroid = true,
+                hasIos = true,
+                "3D VR 서비스",
+                listOf(B2B, B2C)
+            ),
+    "포지큐브" to
+            Company(
+                "포지큐브",
+                PRODUCTION,
+                listOf("AI", "Chatbot", "Big data"),
+                "AI 기술 전문 회사",
+                listOf(
+                    "대화형 AI - AI 상담원이 고객센터의 일손을 돕습니다.",
+                    "비전 AI - AI OCR이 비대면 신분 인증부터 문서 관리를 쉽게 만듭니다.",
+                    "AI 컨택센터 토탈 아웃소싱 - AI 컨택센터 인프라부터 상담인력까지 한번에 제공",
+                ),
+                listOf(
+                    "https://www.posicube.com/",
+                ),
+                "../images/posicube.png",
+                hasWeb = true,
+                hasAndroid = true,
+                hasIos = true,
+                "AI Voice & Vision Leader",
+                listOf(B2B)
+            ),
+    "푸시뉴스" to
+            Company(
+                "푸시뉴스(줍줍)",
+                DEVELOPMENT,
+                listOf("Big Data", "Contents"),
+                "자본시장매체와 IT기술을 접목한 상장기업 전문 미디어테크",
+                listOf(
+                    "AI 기반 트레이딩 시그널",
+                    "AI 컨택센터 토탈 아웃소싱 - AI 컨택센터 인프라부터 상담인력까지 한번에 제공",
+                ),
+                listOf(
+                    "https://www.zoopzoop.io/",
+                ),
+                "../images/posicube.png",
+                hasWeb = true,
+                hasAndroid = true,
+                hasIos = true,
+                "가짜 뉴스 판독 AI 알고리즘 기술",
+                listOf(B2C)
+            ),
+    "피맥스" to
+            Company(
+                "피맥스",
+                PRODUCTION,
+                listOf("AI", "Biomedical", "Healthcare"),
+                "AI 기반 퇴행성 뇌질환 진단용 뇌 MRI 통합 디지털 의료 솔루션 개발",
+                listOf(
+                    "ChestOMx - 빠르고 정확한 Covid-19 질병 진단",
+                    "BrainOmx - 뇌 질병을 정확하게 진단",
+                ),
+                listOf(
+                    "https://pmx-inc.com/",
+                ),
+                "../images/pmx.png",
+                hasWeb = true,
+                hasAndroid = false,
+                hasIos = false,
+                "MRI 촬영 3D 모델링",
+                listOf(B2B)
             )
 )
